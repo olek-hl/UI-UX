@@ -45,7 +45,7 @@ body {
 
 .card.paid {
   /*border: 1px solid rgb(146, 253, 83);*/
-  box-shadow: 0px 3px 0px 0px rgb(146, 253, 83);
+  box-shadow: 0px 3px 0px 0px rgb(238, 123, 223);
 }
 
 .card_status {
@@ -68,7 +68,7 @@ body {
   background-color: rgb(167, 250, 215);
 }
 .card.paid .card_status {
-  background-color: rgb(146, 253, 83);
+  background-color: rgb(238, 123, 223);
 }
 
 .card_status span {
@@ -89,7 +89,7 @@ body {
   border-top-color: rgb(148, 223, 191);
 }
 .card.paid .card_status span {
-  border-top-color: rgb(123, 214, 70);
+  border-top-color: rgb(214, 112, 201);
 }
 
 .card_due-date {
