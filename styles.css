@@ -49,9 +49,9 @@ body {
 }
 
 .card_status {
-  width: 85px;
+  width: 73px;
   display: inline-block;
-  padding: 2px 15px;
+  padding: 2px 10px;
   position: absolute;
   top: 9px;
   left: -12px;
@@ -93,13 +93,13 @@ body {
 }
 
 .card_due-date {
-  margin: 10px 20px 10px 85px;
+  margin: 10px 10px 10px 72px;
   font-weight: bold;
 }
 
 .time {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .card_company {
