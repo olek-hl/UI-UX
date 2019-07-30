@@ -112,8 +112,16 @@ body {
   margin: 5px 20px 0 25px;
   padding-bottom: 15px;
   color: rgba(0, 0, 0, 0.568);
+}
 
+.card.pending .card_user {
   border-bottom: 1px solid rgba(241, 220, 159, 0.712);
+}
+.card.submitted .card_user {
+  border-bottom: 1px solid rgba(167, 250, 215, 0.712);
+}
+.card.paid .card_user {
+  border-bottom: 1px solid rgba(238, 123, 223, 0.712);
 }
 
 .card_requirements {
