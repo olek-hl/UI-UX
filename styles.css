@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  background-color: #f5f5f7;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 300px;
+  min-height: 320px;
+  position: relative;
+  padding-bottom: 30px;
+  border-radius: 10px 10px 10px 10px;
+  color: rgba(0, 0, 0, 0.773);
+  cursor: pointer;
+}
+
+.card.pending {
+  border: 1px solid rgb(250, 228, 167);
+  box-shadow: 0px 3px 0px 0px rgb(250, 228, 167);
+}
+
+.card.submitted {
+  border: 1px solid rgb(167, 250, 215);
+  box-shadow: 0px 3px 0px 0px rgb(167, 250, 215);
+}
+
+.card.paid {
+  border: 1px solid rgb(146, 253, 83);
+  box-shadow: 0px 3px 0px 0px rgb(146, 253, 83);
+}
+
+.card_status {
+  display: inline-block;
+  padding: 2px 15px;
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  font-size: 15px;
+
+  box-shadow: -0px 5px 5px -5px #000;
+}
+
+.card.pending .card_status {
+  background-color: rgb(250, 228, 167);
+}
+.card.submitted .card_status {
+  background-color: rgb(167, 250, 215);
+}
+.card.paid .card_status {
+  background-color: rgb(146, 253, 83);
+}
+
+.card_status span {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  text-decoration: none;
+  border-top: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+
+.card.pending .card_status span {
+  border-top-color: rgb(235, 214, 159);
+}
+.card.submitted .card_status span {
+  border-top-color: rgb(148, 223, 191);
+}
+.card.paid .card_status span {
+  border-top-color: rgb(123, 214, 70);
+}
+
+.card_due-date {
+  margin: 10px 20px 10px 85px;
+  font-weight: bold;
+}
+
+.time {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.card_company {
+  margin: 30px 20px 0 25px;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.card_user {
+  margin: 5px 20px 0 25px;
+  padding-bottom: 15px;
+  color: rgba(0, 0, 0, 0.568);
+
+  border-bottom: 1px solid rgba(241, 220, 159, 0.712);
+}
+
+.card_requirements {
+  margin: 10px 25px 20px 46px;
+  padding: 0 0 0 0;
+  font-size: 20px;
+}
+
+.createdAt {
+  position: absolute;
+  left: 25px;
+  bottom: 5px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    display: block;
+  }
+  .card {
+    margin-top: 30px;
+  }
+}
